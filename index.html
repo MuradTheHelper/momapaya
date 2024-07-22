@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makan Apa Ya?</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Makan Apa yaa?</h1>
+    </header>
+
+    <main>
+        <div id="food-input">
+            <input type="text" id="new-food" placeholder="Tambahkan makanan...">
+            <button id="add-food">Tambah</button>
+        </div>
+        <div id="food-list">
+            <h2>Daftar Makanan:</h2>
+            <ul id="foods"></ul>
+        </div>
+        <div id="wheel-container">
+            <canvas id="wheel"></canvas>
+            <button id="spin-btn">Putar!</button>
+        </div>
+        <div id="result">
+            <h2>Hasil:</h2>
+            <p id="food-result"></p>
+        </div>
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Penentu Makanan. Dibuat dengan ❤️ oleh Anda.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
